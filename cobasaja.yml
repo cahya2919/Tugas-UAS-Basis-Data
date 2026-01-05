@@ -1,0 +1,407 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\nabil
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 464
+    content: "\e[?9001h\e[?1004h"
+  - delay: 60
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 95
+    content: 'PS C:\Users\nabil> '
+  - delay: 2164
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93mm\e[?25h"
+  - delay: 232
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 655
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;20Hmys\e[?25h"
+  - delay: 757
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;20Hmysq\e[?25h"
+  - delay: 214
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;20Hmysql\e[?25h"
+  - delay: 448
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;20Hmysql \e[?25h"
+  - delay: 489
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;20Hmysql \e[37m-\e[?25h"
+  - delay: 323
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;20Hmysql \e[90m-u\e[?25h"
+  - delay: 184
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[?25h"
+  - delay: 595
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 369
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 130
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 176
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 315
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 457
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 212
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 214
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[90m-p \e[?25h"
+  - delay: 962
+    content: "\e[m"
+  - delay: 12
+    content: "\r\n"
+  - delay: 40
+    content: E
+  - delay: 22
+    content: 'nter password: '
+  - delay: 938
+    content: '*'
+  - delay: 303
+    content: '*'
+  - delay: 182
+    content: '*'
+  - delay: 143
+    content: '*'
+  - delay: 350
+    content: '*'
+  - delay: 155
+    content: '*'
+  - delay: 141
+    content: '*'
+  - delay: 227
+    content: '*'
+  - delay: 617
+    content: "\r\n"
+  - delay: 38
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 15
+    content: "\e[?25l\r\nYour MariaDB connection id is 24\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 1261
+    content: u
+  - delay: 116
+    content: s
+  - delay: 275
+    content: e
+  - delay: 216
+    content: ' '
+  - delay: 197
+    content: p
+  - delay: 137
+    content: e
+  - delay: 159
+    content: r
+  - delay: 265
+    content: p
+  - delay: 141
+    content: u
+  - delay: 130
+    content: s
+  - delay: 629
+    content: 'y'
+  - delay: 200
+    content: a
+  - delay: 149
+    content: 'y'
+  - delay: 121
+    content: a
+  - delay: 471
+    content: ' '
+  - delay: 1904
+    content: ;
+  - delay: 777
+    content: "\b \b"
+  - delay: 532
+    content: "\r\n"
+  - delay: 18
+    content: "Database changed\r\nMariaDB [perpusyaya]> "
+  - delay: 9157
+    content: s
+  - delay: 204
+    content: h
+  - delay: 201
+    content: o
+  - delay: 292
+    content: w
+  - delay: 236
+    content: ' '
+  - delay: 302
+    content: d
+  - delay: 169
+    content: a
+  - delay: 247
+    content: t
+  - delay: 50
+    content: a
+  - delay: 870
+    content: b
+  - delay: 177
+    content: a
+  - delay: 204
+    content: s
+  - delay: 203
+    content: s
+  - delay: 121
+    content: e
+  - delay: 679
+    content: "\b \b"
+  - delay: 441
+    content: "\b \b"
+  - delay: 4039
+    content: e
+  - delay: 235
+    content: s
+  - delay: 1427
+    content: "\r\n"
+  - delay: 19
+    content: '    -> '
+  - delay: 1357
+    content: ;
+  - delay: 243
+    content: "\r\n+--------------------+\r\n| Database           |\r\n+--------------------+\r\n| cobadulu           |\r\n| information_schema |\r\n| mysql              |\r\n| performance_schema |\r\n| perpusyaya         |\r\n| sys                |\r\n| test               |\r\n+--------------------+\r\n7 rows in set (0.001 sec)\r\n"
+  - delay: 7
+    content: "\nMariaDB [perpusyaya]>\e[1C"
+  - delay: 6623
+    content: u
+  - delay: 137
+    content: d
+  - delay: 332
+    content: e
+  - delay: 368
+    content: "\b \b"
+  - delay: 215
+    content: "\b \b"
+  - delay: 678
+    content: "\b \b"
+  - delay: 781
+    content: s
+  - delay: 362
+    content: e
+  - delay: 257
+    content: l
+  - delay: 95
+    content: e
+  - delay: 407
+    content: c
+  - delay: 370
+    content: t
+  - delay: 407
+    content: ' '
+  - delay: 752
+    content: '8'
+  - delay: 312
+    content: ' '
+  - delay: 451
+    content: "\b \b"
+  - delay: 195
+    content: "\b \b"
+  - delay: 579
+    content: '*'
+  - delay: 427
+    content: ' '
+  - delay: 704
+    content: f
+  - delay: 346
+    content: r
+  - delay: 139
+    content: o
+  - delay: 223
+    content: m
+  - delay: 187
+    content: ' '
+  - delay: 257
+    content: b
+  - delay: 1331
+    content: u
+  - delay: 187
+    content: k
+  - delay: 123
+    content: u
+  - delay: 1160
+    content: "\r\n"
+  - delay: 12
+    content: '    -> '
+  - delay: 866
+    content: ;
+  - delay: 214
+    content: "\r\n+---------+---------------+-------------+----------+-------+\r\n| id_buku | judul         | penulis     | isbn     | harga |\r\n+---------+---------------+-------------+----------+-------+\r\n|       1 | Megamendung   | Aci Resti   | 8627392  | 78999 |\r\n|       2 | diatas langit | mayasari ut | 3646635  | 80000 |\r\n|       3 | hujan         | mentari     | 79686685 |       |\r\n|       4 | sisahati      | ujan tau    | 034788   |       |\r\n|       5 | harum segar   | mimiou      | 87887787 | 89999 |\r\n+---------+---------------+-------------+----------+-------+\r\n5 rows in set (0.000 sec)\r\n"
+  - delay: 17
+    content: "\nMariaDB [perpusyaya]>\e[1C"
+  - delay: 3545
+    content: e
+  - delay: 938
+    content: i
+  - delay: 845
+    content: "\b \b"
+  - delay: 921
+    content: x
+  - delay: 181
+    content: i
+  - delay: 292
+    content: t
+  - delay: 1363
+    content: "\r\nBye"
+  - delay: 11
+    content: "\r\n"
+  - delay: 15
+    content: 'PS C:\Users\nabil> '
+  - delay: 1545
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93me\e[?25h"
+  - delay: 1450
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\bex\e[?25h"
+  - delay: 163
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[30;20Hexi\e[?25h"
+  - delay: 206
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[92m\e[30;20Hexit\e[?25h"
+  - delay: 701
+    content: "\e[m"
+  - delay: 9
+    content: "\r\n"
